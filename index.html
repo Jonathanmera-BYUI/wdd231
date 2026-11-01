@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 course home page for Jonathan Mera.">
+    <meta name="author" content="Jonathan Mera">
+
+    <title>WDD231 - Course Home</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    
+<header>
+    <div class="site-branding">
+        <img src="images/logo-new.svg" alt="Jonathan Mera logo">
+        <span>Jonathan Mera</span>
+    </div>
+
+    <button id="menuButton" class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="final/index.html">Final</a>
+    </nav>
+</header>
+
+   
+<main>
+    <h1>Home</h1>
+
+    <div class="about-section">
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Jonathan Mera. I am originally
+                from Argentina, but I currently live in Brazil.
+                One important experience in my life was serving
+                as a missionary in the Brazil Brasília Mission,
+                where I developed communication and teamwork skills.
+
+                I am currently studying Web Frontend Development
+                through Brigham Young University (BYU). I enjoy
+                learning how websites are built, from HTML and CSS
+                to JavaScript. My goal is to continue developing
+                my programming skills and building useful solutions
+                through technology.
+            </p>
+        </section>
+
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <img src="images/picture.jpg"
+                 alt="Portrait of Jonathan Mera">
+        </section>
+    </div>
+
+    <section class="course-section">
+        <h2>Web Certificate Courses</h2>
+
+        <div class="course-filters">
+            <button type="button" data-filter="all">All</button>
+            <button type="button" data-filter="CSE">CSE</button>
+            <button type="button" data-filter="WDD">WDD</button>
+        </div>
+
+        <div id="courseList" class="course-list"></div>
+
+        <p id="totalCredits"></p>
+    </section>
+</main>
+
+
+    
+<footer>
+   <div class="social-links">
+    <a href="https://www.linkedin.com/in/jonathan-nicolas-pacheco-mera-0b7870237?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+          <i class="fa-brands fa-linkedin"></i>
+    </a>
+
+    <a href="https://github.com/Jonathanmera-BYUI" target="_blank">
+         <i class="fa-brands fa-github"></i>
+    </a>
+
+</div>
+
+    <p>
+        &copy; <span id="currentyear"></span>
+        Jonathan Mera | Itajaí, Brazil
+    </p>
+
+    <p>Last Modification: <span id="lastModified"></span></p>
+</footer>
+
+
+</body>
+</html>
