@@ -1,0 +1,18 @@
+{
+    "familyName": "Mera",
+    "moveInDate": "2026-01-15",
+    "numberOfMembers": 2,
+    "visitedByBishopric": false,
+    "members": [
+    {
+        "name": "Jonathan",
+        "gender": "Male",
+        "birthdate": "1998-05-12"
+    },
+    {
+        "name": "Giulia",
+        "gender": "Female",
+        "birthdate": "2000-08-20"
+    }
+    ]
+}

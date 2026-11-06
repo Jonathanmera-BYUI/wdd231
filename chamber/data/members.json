@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Itajaí Shopping",
+        "address": "Rua Samuel Heusi, 234 - Centro, Itajaí - SC",
+        "phone": "(47) 3348-4609",
+        "website": "https://itajaishopping.com.br/",
+        "image": "itajai-shopping.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Bistek Supermercados - São João",
+        "address": "Rua Heitor Liberato, 1550 - São João, Itajaí - SC",
+        "phone": "(47) 3349-8488",
+        "website": "https://institucional.bistek.com.br/",
+        "image": "bistek.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Koch Supermercados - São João",
+        "address": "Rua José Pereira Liberato, 1190 - São João, Itajaí - SC",
+        "phone": "(47) 3246-1279",
+        "website": "https://www.komprao.com.br/",
+        "image": "koch.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Giassi Supermercados",
+        "address": "Avenida Osvaldo Reis, 839 - Fazenda, Itajaí - SC",
+        "phone": "(47) 2103-4300",
+        "website": "https://institucional.giassi.com.br/",
+        "image": "giassi.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Fort Atacadista - Centro",
+        "address": "Rua Tijucas, 237 - Centro, Itajaí - SC",
+        "phone": "(47) 2104-2609",
+        "website": "https://www.fortatacadista.com.br/",
+        "image": "fort.jpg",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Komprão - Espinheiros",
+        "address": "Rodovia Jorge Lacerda, 1615 - Espinheiros, Itajaí - SC",
+        "phone": "(47) 3228-8220",
+        "website": "https://www.komprao.com.br/",
+        "image": "komprao.jpg",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Bistek Supermercados - Fazenda",
+        "address": "Avenida Sete de Setembro, 1330 - Fazenda, Itajaí - SC",
+        "phone": "(47) 3348-7941",
+        "website": "https://institucional.bistek.com.br/",
+        "image": "bistek.jpg",
+        "membershipLevel": 1
+    }
+]

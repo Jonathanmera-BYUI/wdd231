@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore local businesses and members of the Itajaí Chamber of Commerce.">
+    <meta name="author" content="Jonathan Mera">
+
+    <meta property="og:title" content="Itajaí Chamber of Commerce - Business Directory">
+    <meta property="og:description" content="Discover businesses and connect with the Itajaí business community.">
+    <meta property="og:image" content="https://jonathanmera-byui.github.io/wdd231/chamber/images/chamber.jpg">
+    <meta property="og:url" content="https://jonathanmera-byui.github.io/wdd231/chamber/directory.html">
+
+    <title>Itajaí Chamber of Commerce | Directory</title>
+
+    <link rel="icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/larger.css">
+    
+
+    <script src="js/directory.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Itajaí Chamber of Commerce</h1>
+
+            <button id="menuButton" aria-label="Open navigation menu">
+    ☰
+</button>
+        </div>
+
+        <nav id="mainNav">
+            <a href="../index.html">Home</a>
+            <a href="directory.html" class="active">Directory</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="directory-section">
+
+            <h2>Business Directory</h2>
+
+            <p>
+                Discover local businesses and connect with our community.
+            </p>
+
+            <div class="view-buttons">
+                <button id="gridView" aria-label="Display grid view">
+    ▦ Grid
+</button>
+
+                <button id="listView" aria-label="Display list view">
+    ☷ List
+</button>
+            </div>
+
+            <div id="membersContainer" class="grid">
+                <!-- Members will be loaded here using JavaScript -->
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Itajaí Chamber of Commerce</p>
+        <p>Itajaí, Santa Catarina, Brazil</p>
+        <p>Developed by Jonathan Mera | WDD231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
