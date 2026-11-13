@@ -1,3 +1,5 @@
+
+/* TABLET AND DESKTOP */
 @media screen and (min-width: 640px) {
 
     .header-content {
@@ -40,9 +42,9 @@
     #membersContainer.list .member-card img {
         display: none;
     }
-
 }
 
+/* LARGE DESKTOP */
 @media screen and (min-width: 1000px) {
 
     #membersContainer.grid {
