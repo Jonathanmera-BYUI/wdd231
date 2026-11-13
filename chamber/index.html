@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover local businesses, events, and opportunities in Itajaí, Santa Catarina.">
+    <meta name="author" content="Jonathan Mera">
+
+    <title>Itajaí Chamber of Commerce | Home</title>
+
+    <link rel="icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <script src="js/home.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Itajaí Chamber of Commerce</h1>
+
+            <button id="menuButton" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+
+        <nav id="mainNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/chamber.webp"
+                 alt="Itajaí Chamber of Commerce and local business community">
+
+            <div class="hero-content">
+                <h2>Connecting Businesses, Building Community</h2>
+                <a href="directory.html" class="cta-button">
+                    Explore Our Members
+                </a>
+            </div>
+        </section>
+
+        <!-- Current Events -->
+        <section class="events">
+            <h2>Current Events</h2>
+
+            <div class="events-container">
+                <article>
+                    <h3>Business Networking</h3>
+                    <p>Connect with local entrepreneurs and discover new opportunities.</p>
+                </article>
+
+                <article>
+                    <h3>Community Development</h3>
+                    <p>Discover initiatives supporting the growth of Itajaí businesses.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Weather -->
+        <section class="weather">
+            <h2>Weather in Itajaí</h2>
+
+            <div id="currentWeather">
+                <p>Loading current weather...</p>
+            </div>
+
+            <h3>Three-Day Forecast</h3>
+
+            <div id="weatherForecast">
+                <p>Loading forecast...</p>
+            </div>
+        </section>
+
+        <!-- Company Spotlights -->
+        <section class="spotlights">
+            <h2>Company Spotlights</h2>
+
+            <div id="spotlightsContainer">
+                <p>Loading featured businesses...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Itajaí Chamber of Commerce</p>
+        <p>Itajaí, Santa Catarina, Brazil</p>
+        <p>Developed by Jonathan Mera | WDD231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
