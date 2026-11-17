@@ -162,10 +162,25 @@ button:hover {
 }
 
 /* COMPLETED COURSES */
-.course-card.completed {
-    background-color: #d9ead3;
-    border-color: #6aa56a;
+
+.course-card {
+    background-color: #f1f5f9;
+    color: #263746;
+    border: 1px solid #64748b;
+    cursor: pointer;
 }
+
+.course-card.completed {
+    background-color: #dcefe0;
+    color: #1b4332;
+    border-color: #70a77b;
+}
+
+.course-card:hover {
+    background-color: #c8dfcf;
+    color: #183b2a;
+}
+
 
 .course-card:not(.completed) {
     background-color: #fff3cd;
@@ -220,4 +235,40 @@ footer {
     .course-list {
         grid-template-columns: 1fr;
     }
+}
+
+
+dialog {
+    width: 90%;
+    max-width: 500px;
+    border: none;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+dialog h2 {
+    color: #1d3557;
+    margin-top: 0;
+}
+
+#closeModal {
+    display: block;
+    margin-left: auto;
+    border: none;
+    background: #1d3557;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+}
+
+dialog p {
+    line-height: 1.5;
+    margin: 0.8rem 0;
 }
