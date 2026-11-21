@@ -1,17 +1,13 @@
 
 /* General */
-* {
-    box-sizing: border-box;
-}
-
-body {
+.join-page {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     color: #263238;
     background: #f4f6f8;
 }
 
-main {
+.join-page main {
     max-width: 1100px;
     margin: 30px auto;
     padding: 20px;
@@ -21,16 +17,12 @@ h1, h2 {
     color: #123b52;
 }
 
-header h1 {
-    color: white;
-}
-
 /* Form */
 form {
     background: white;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
     display: grid;
     gap: 15px;
 }
@@ -87,15 +79,12 @@ form button:hover,
     border: 1px solid #d5dde2;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .membership-card h3 {
     color: #17658a;
-}
-
-.membership-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .membership-card:hover {
@@ -104,20 +93,20 @@ form button:hover,
 }
 
 /* Modals */
-dialog {
+.join-page dialog {
     max-width: 450px;
     width: 85%;
     padding: 25px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .25);
 }
 
-dialog::backdrop {
-    background: rgba(0,0,0,.6);
+.join-page dialog::backdrop {
+    background: rgba(0, 0, 0, .6);
 }
 
-dialog[open] {
+.join-page dialog[open] {
     animation: modalFade .3s ease;
 }
 
@@ -137,20 +126,10 @@ dialog[open] {
     background: white;
     padding: 35px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-    main {
-        padding: 12px;
-    }
-
-    form {
-        padding: 18px;
-    }
-}
-
+/* Return Button */
 .return-button {
     display: inline-block;
     margin-top: 20px;
@@ -165,4 +144,15 @@ dialog[open] {
 
 .return-button:hover {
     background-color: #0d405b;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .join-page main {
+        padding: 12px;
+    }
+
+    form {
+        padding: 18px;
+    }
 }
