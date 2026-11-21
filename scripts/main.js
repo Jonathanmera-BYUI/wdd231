@@ -139,10 +139,11 @@ document.querySelector("#currentyear").textContent = new Date().getFullYear();
 const menuButton = document.querySelector("#menuButton");
 const mainNav = document.querySelector("#mainNav");
 
-menuButton.addEventListener("click", () => {
-    mainNav.classList.toggle("open");
+if (menuButton && mainNav) {
+    menuButton.addEventListener("click", () => {
+        mainNav.classList.toggle("open");
 
-    const isOpen = mainNav.classList.contains("open");
-
-    menuButton.setAttribute("aria-expanded", isOpen);
-});
+        const isOpen = mainNav.classList.contains("open");
+        menuButton.setAttribute("aria-expanded", isOpen);
+    });
+}

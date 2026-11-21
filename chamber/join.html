@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Discover local businesses, events, and opportunities in Itajaí, Santa Catarina.">
+    <meta name="author" content="Jonathan Mera">
+
+    <title>Itajaí Chamber of Commerce | Join</title>
+
+  <link rel="stylesheet" href="../styles/normalize.css">
+<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="styles/join.css">
+
+
+    <meta property="og:title" content="Itajaí Chamber of Commerce - Join Page">
+    <meta property="og:description" content="Discover local businesses, connect with entrepreneurs, explore community events, and find opportunities in Itajaí.">
+    <meta property="og:image" content="https://jonathanmera-byui.github.io/wdd231/chamber/images/chamber.webp">
+    <meta property="og:url" content="https://jonathanmera-byui.github.io/wdd231/chamber/join.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+    <div class="site-branding">
+        <img src="../images/logo-new.svg" alt="Jonathan Mera logo">
+        <span>Jonathan Mera</span>
+    </div>
+
+    <button id="menuButton" class="menu-button"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+        ☰
+    </button>
+
+    <nav id="mainNav">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Chamber</a>
+        <a href="../final/index.html">Final</a>
+        <a href="directory.html">Directory</a>
+    </nav>
+</header>
+
+    <main>
+    <div class="join-layout">
+        <section>
+        <h1>Join the Itajaí Chamber of Commerce</h1>
+
+            <form action="thankyou.html" method="get">
+            <div>
+    <label for="firstName">First Name</label>
+    <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        autocomplete="given-name"
+        required
+        title="Enter your first name"
+    >
+    </div>
+
+    <div>
+    <label for="lastName">Last Name</label>
+    <input
+        type="text"
+        id="lastName"
+        name="lastName"
+        autocomplete="family-name"
+        required
+        title="Enter your last name"
+    >
+    </div>
+
+    <div>
+    <label for="position">Title or Position</label>
+    <input
+        type="text"
+        id="position"
+        name="position"
+        autocomplete="organization-title"
+        pattern="[A-Za-zÀ-ÿ\s\-]{7,}"
+        required
+        title="Enter your position using at least 7 characters. Only letters, spaces, and hyphens are allowed."
+    >
+    </div>
+
+    <div>
+    <label for="email">Email Address</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        placeholder="example@email.com"
+        required
+        title="Enter your email address"
+    >
+    </div>
+
+    <div>
+    <label for="phone">Mobile Phone</label>
+    <input
+        type="tel"
+        id="phone"
+        name="phone"
+        autocomplete="tel"
+        required
+        title="Enter your mobile phone number"
+    >
+    </div>
+
+    <div>
+    <label for="organization">Organization Name</label>
+    <input
+        type="text"
+        id="organization"
+        name="business"
+        autocomplete="organization"
+        required
+        title="Enter your business name"
+    >
+</div>
+
+<div>
+    <label for="membership">Membership Level</label>
+
+    <select id="membership" name="membership" required>
+        <option value="">Select a Membership Level</option>
+        <option value="NP">NP Membership</option>
+        <option value="Bronze">Bronze Membership</option>
+        <option value="Silver">Silver Membership</option>
+        <option value="Gold">Gold Membership</option>
+    </select>
+</div>
+
+<div>
+    <label for="description">Organization Description</label>
+
+    <textarea
+        id="description"
+        name="description"
+        title="Describe your organization"
+    ></textarea>
+</div>
+
+<input type="hidden" id="timestamp" name="timestamp">
+<button type="submit">Submit Application</button>
+
+        </form>
+    </section>
+
+    <section class="membership-section">
+    <h2>Membership Levels</h2>
+
+    <div class="membership-cards">
+
+        <article class="membership-card">
+            <h3>NP Membership</h3>
+            <p>For nonprofit organizations.</p>
+            <button type="button" data-modal="npModal"> View Benefits </button>
+        </article>
+
+        <article class="membership-card">
+            <h3>Bronze Membership</h3>
+            <p>Basic membership benefits.</p>
+            <button type="button" data-modal="bronzeModal"> View Benefits </button>
+        </article>
+
+        <article class="membership-card">
+            <h3>Silver Membership</h3>
+            <p>Additional business opportunities.</p>
+            <button type="button" data-modal="silverModal">View Benefits</button>
+        </article>
+
+        <article class="membership-card">
+            <h3>Gold Membership</h3>
+            <p>Premium membership benefits.</p>
+           <button type="button" data-modal="goldModal">View Benefits</button>
+        </article>
+
+    </div>
+</section>
+</div>
+
+<dialog id="npModal">
+    <h2>NP Membership Benefits</h2>
+
+    <ul>
+        <li>Free membership for nonprofit organizations.</li>
+        <li>Access to community events.</li>
+        <li>Networking opportunities.</li>
+    </ul>
+
+    <button type="button" class="closeModal">Close</button>
+</dialog>
+
+<dialog id="bronzeModal">
+    <h2>Bronze Membership Benefits</h2>
+    <p>Access to business resources and networking opportunities.</p>
+    <button type="button" class="closeModal">Close</button>
+</dialog>
+
+<dialog id="silverModal">
+    <h2>Silver Membership Benefits</h2>
+    <p>Includes Bronze benefits plus promotional opportunities.</p>
+    <button type="button" class="closeModal">Close</button>
+</dialog>
+
+<dialog id="goldModal">
+    <h2>Gold Membership Benefits</h2>
+    <p>Includes Silver benefits plus premium business visibility and events.</p>
+    <button type="button" class="closeModal">Close</button>
+</dialog>
+
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Itajaí Chamber of Commerce</p>
+        <p>Itajaí, Santa Catarina, Brazil</p>
+        <p>Developed by Jonathan Mera | WDD231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/join.js" defer></script>
+
+</body>
+</html>

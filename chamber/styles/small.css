@@ -145,3 +145,20 @@ footer p {
 #membersContainer.list .member-card img {
     display: none;
 }
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-branding img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.site-branding span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
