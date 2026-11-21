@@ -12,14 +12,14 @@ body {
 }
 
 /* HEADER */
-    header {
+header {
     background-color: #263746;
     color: white;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    }
+}
 
 .site-branding {
     display: flex;
@@ -36,14 +36,14 @@ body {
     object-fit: contain;
 }
 
-    nav {
+/* NAVIGATION */
+nav {
     display: flex;
     gap: 25px;
     width: 100%;
     background-color: #111;
     padding: 12px 5%;
 }
-
 
 nav a {
     color: white;
@@ -89,14 +89,13 @@ h1 {
     max-width: 220px;
     display: block;
     margin: 0 auto;
-    
 }
 
 .student-photo h2 {
     text-align: center;
 }
 
-/* Section titles */
+/* SECTION TITLES */
 main section h2 {
     background-color: #263746;
     color: white;
@@ -106,11 +105,9 @@ main section h2 {
     box-sizing: border-box;
 }
 
-/* About Me title */
 .about-me h2 {
     text-align: center;
-    
-} 
+}
 
 .about-me h2,
 .student-photo h2 {
@@ -151,9 +148,11 @@ button:hover {
 
 .course-card {
     padding: 15px;
-    background-color: #e5e5e5;
-    border: 1px solid #ccc;
+    background-color: #f1f5f9;
+    color: #263746;
+    border: 1px solid #64748b;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #totalCredits {
@@ -162,14 +161,6 @@ button:hover {
 }
 
 /* COMPLETED COURSES */
-
-.course-card {
-    background-color: #f1f5f9;
-    color: #263746;
-    border: 1px solid #64748b;
-    cursor: pointer;
-}
-
 .course-card.completed {
     background-color: #dcefe0;
     color: #1b4332;
@@ -180,7 +171,6 @@ button:hover {
     background-color: #c8dfcf;
     color: #183b2a;
 }
-
 
 .course-card:not(.completed) {
     background-color: #fff3cd;
@@ -237,7 +227,7 @@ footer {
     }
 }
 
-
+/* DIALOG */
 dialog {
     width: 90%;
     max-width: 500px;
